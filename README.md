@@ -1,8 +1,6 @@
-# electric_vehicle
+# Electrical Vehicle Data (1997-2024)
 
 ## Project Description
-
-### Electrical Vehicle Data (1997-2024)
 
 -   This dataset shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through the Washington State Department of Licensing (DOL) the source of the dataset is shared by the Us government below are the features of the dataset which are important to understand before working with the data.
 
@@ -26,7 +24,7 @@
 
 -   [x] Electric Utility --\>Electric utilities are responsible for providing the necessary infrastructure to supply electricity to EV owners, including charging stations, grid connections, and electricity distribution networks.
 
-# Steps perfomed
+# Steps 
 
 -   [x] Data Cleaning
 -   [x] Data Analysis and exploration for US Elelctrical cars
