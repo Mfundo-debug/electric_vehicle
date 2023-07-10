@@ -4,7 +4,8 @@
 
 -   This dataset shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through the Washington State Department of Licensing (DOL) the source of the dataset is shared by the Us government below are the features of the dataset which are important to understand before working with the data.
 
-#### Dataset information
+
+### Dataset information
 
 -   [x] model year-\> in which year the car is launched or it will be launched.
 
