@@ -1,2 +1,5 @@
 # electric_vehicle
-Data Analysis and exploration for US Elelctrical cars 
+
+ - [x] Data Cleaning
+ - [x] Data Analysis and exploration for US Elelctrical cars 
+ - [x] Data Modelling
