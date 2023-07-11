@@ -29,3 +29,29 @@
 -   [x] Data Cleaning
 -   [x] Data Analysis, Visualization and exploration for US Elelctrical cars
 -   [x] Data Modelling
+-   [x] Evaluation of the xgboost model
+-   [x] Checked the model convergence
+-   [x] Checked the model performance on test data
+-   [x] Checked the model performance on train data
+
+```{python}
+# plot the learning curve
+from sklearn.model_selection import learning_curve
+train_sizes, train_scores, test_scores = learning_curve(xgb_model, X_train, y_train, cv=5, scoring='neg_mean_squared_error', n_jobs=-1, train_sizes=np.linspace(0.01, 1.0, 50), verbose=1)
+plt.plot(train_sizes, -test_scores.mean(1), 'o-', color="r", label="Test score")
+plt.plot(train_sizes, -train_scores.mean(1), 'o-', color="g", label="Train score")
+plt.xlabel("Train size")
+plt.ylabel("Mean Squared Error")
+plt.title('Learning curves')
+plt.legend(loc="best")
+plt.show()
+```
+
+```         
+[learning_curve] Training set sizes: [  860  2599  4338  6077  7815  9554 11293 13032 14771 16510 18248 19987
+ 21726 23465 25204 26942 28681 30420 32159 33898 35637 37375 39114 40853
+ 42592 44331 46070 47808 49547 51286 53025 54764 56502 58241 59980 61719
+ 63458 65197 66935 68674 70413 72152 73891 75630 77368 79107 80846 82585
+ 84324 86063]
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 16 concurrent workers.
+```
